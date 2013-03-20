@@ -1,5 +1,10 @@
-body{background:#004a8b url('../images/bg-body.jpg') no-repeat center top;}
+body{background:#004a8b url('../images/bg-body.jpg') no-repeat center top;font-family:arial;}
 #All{}
 #Content{width:1023px;margin:0 auto; background:url('../images/bg-man-all.png') no-repeat 0 0;height:920px;overflow:hidden}
 #Footer{height:124px;background:#004a8b url('../images/bg-footer.png') no-repeat center top;}
-.Box-content{background: url('../images/bg-footer.png') repeat-x center top;}
+.Box{float:right;}
+.Boxfooter{float:right;}
+.Box-center{background:url('../images/bg-box-content-center.png') repeat-y ;}
+.Box-content{display:inline-block; height:413px;width:330px;background:url('../images/bg-box-content-decription.png') no-repeat;}
+.Menu{display:inline-block;vertical-align:top;}
+.hr{background:url('../images/img-hr.png') no-repeat ;height:1px;}
