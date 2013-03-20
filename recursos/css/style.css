@@ -7,19 +7,51 @@
          url('font/gotham-book_0-webfont.svg#gotham_bookregular') format('svg');
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: 'gotham_boldregular';
+    src: url('font/gotham-bold-webfont.eot');
+    src: url('font/gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/gotham-bold-webfont.woff') format('woff'),
+         url('font/gotham-bold-webfont.ttf') format('truetype'),
+         url('font/gotham-bold-webfont.svg#gotham_boldregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
-body{}
+body{background:#004b8d;}
 #All{background:#004b8d url('../images/bgzao.jpg') no-repeat center top;font-family:gotham_bookregular;}
 #Content{width:991px;margin:0 auto;overflow:hidden;min-height: 770px;}
-#Footer{height:124px;background:url('../images/bg-footer.png') no-repeat center top;clear:both;overflow:hidden;position: relative;top: -55px;}
+#Footer{height:124px;background:url('../images/bg-footer.png') no-repeat center top;clear:both;overflow:hidden;position: relative;top: -71px;}
 .Box{float:right;margin-top:46px;}
 .Boxfooter{width:991px;margin:0 auto;overflow:hidden;}
 .Boxfooter img{float:right;margin:40px 120px 0 0;}
 .Box-center{background:url('../images/bg-box-content-center.png') repeat-y ;}
-.Box-content{display:inline-block; height:413px;width:330px;background:url('../images/bg-box-content-decription.png') no-repeat;margin-left:35px;}
+.Box-content{display:inline-block; min-height:413px;width:350px;margin-left:35px;position:relative;}
 .Box-content .home{font-size:12px;line-height: 27px;color:#003e88;padding:35px 3px 0;}
 .Menu ul li{margin:5px 0;}
 .Menu{display:inline-block;vertical-align:top;margin-left:44px;}
 .hr{background:url('../images/img-hr.png') no-repeat ;height:1px;}
+
+/*contato*/
+.contact p{margin:40px 0 25px;}
+.contact span{display:block;margin-bottom:5px;}
+.contact ul{margin-bottom:35px;}
+.contact ul li {display:inline-block;vertical-align:bottom;}
+.contact ul li a{background:url('../images/ico-twitter.png') no-repeat left top;height:20px;padding:0 0 5px 20px;margin-right:20px;	}
+.contact ul .link2 a{background:url('../images/ico-youtube.png') no-repeat left top;padding-left:40px;	}
+.contact h1{margin-top: 70px;}
+.Box-content h1{font-size:18px;font-family:gotham_boldregular;margin-bottom:15px;}
+.Box-content-header{background:url('../images/img-hr.png') no-repeat;height:5px;}
+.Box-content-center{color:#003e88;padding:35px 10px 0 10px;overflow:hidden}
+.Box-content-center p{font-size:12px;}
+.Box-content-center .space{line-height: 27px;}
+.Box-content-center ul li a{font-size:12px;font-family:gotham_bookregular;color:#0e4b8b;text-decoration:none;}
+.Box-content-center a{font-size:15px;font-family:gotham_bookregular;color:#0e4b8b;text-decoration:none;font-weight:bold;}
+.Box-content-center span{font-size:18px;font-family:gotham_boldregular;}
+.Box-content-footer{background:url('../images/img-hr.png') no-repeat;height:5px;clear:both;position:absolute;bottom:0;width:330px;}
+
+/*comunidade*/
+
+.Comunidade p{margin-bottom:35px;}
