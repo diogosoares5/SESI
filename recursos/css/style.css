@@ -1,10 +1,25 @@
-body{background:#004a8b url('../images/bg-body.jpg') no-repeat center top;font-family:arial;}
-#All{}
-#Content{width:1023px;margin:0 auto; background:url('../images/bg-man-all.png') no-repeat 0 0;height:920px;overflow:hidden}
-#Footer{height:124px;background:#004a8b url('../images/bg-footer.png') no-repeat center top;}
-.Box{float:right;}
-.Boxfooter{float:right;}
+@font-face {
+    font-family: 'gotham_bookregular';
+    src: url('font/gotham-book_0-webfont.eot');
+    src: url('font/gotham-book_0-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/gotham-book_0-webfont.woff') format('woff'),
+         url('font/gotham-book_0-webfont.ttf') format('truetype'),
+         url('font/gotham-book_0-webfont.svg#gotham_bookregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body{}
+#All{background:#004b8d url('../images/bgzao.jpg') no-repeat center top;font-family:gotham_bookregular;}
+#Content{width:991px;margin:0 auto;overflow:hidden;min-height: 770px;}
+#Footer{height:124px;background:url('../images/bg-footer.png') no-repeat center top;clear:both;overflow:hidden;position: relative;top: -55px;}
+.Box{float:right;margin-top:46px;}
+.Boxfooter{width:991px;margin:0 auto;overflow:hidden;}
+.Boxfooter img{float:right;margin:40px 120px 0 0;}
 .Box-center{background:url('../images/bg-box-content-center.png') repeat-y ;}
-.Box-content{display:inline-block; height:413px;width:330px;background:url('../images/bg-box-content-decription.png') no-repeat;}
-.Menu{display:inline-block;vertical-align:top;}
+.Box-content{display:inline-block; height:413px;width:330px;background:url('../images/bg-box-content-decription.png') no-repeat;margin-left:35px;}
+.Box-content .home{font-size:12px;line-height: 27px;color:#003e88;padding:35px 3px 0;}
+.Menu ul li{margin:5px 0;}
+.Menu{display:inline-block;vertical-align:top;margin-left:44px;}
 .hr{background:url('../images/img-hr.png') no-repeat ;height:1px;}
