@@ -19,20 +19,25 @@
     font-style: normal;
 
 }
+/*classe genericas*/
+.rt{float:right;}
+.lf{float:left;}
+
 
 body{background:#004b8d;}
 #All{background:#004b8d url('../images/bgzao.jpg') no-repeat center top;font-family:gotham_bookregular;}
 #Content{width:991px;margin:0 auto;overflow:hidden;min-height: 770px;}
 #Footer{height:124px;background:url('../images/bg-footer.png') no-repeat center top;clear:both;overflow:hidden;position: relative;top: -71px;}
-.Box{float:right;margin-top:46px;}
+.Box{float:right;margin-top:46px;height:560px;}
 .Boxfooter{width:991px;margin:0 auto;overflow:hidden;}
 .Boxfooter img{float:right;margin:40px 120px 0 0;}
-.Box-center{background:url('../images/bg-box-content-center.png') repeat-y ;}
+.Box-center{background:url('../images/bg-box-content-center.png') repeat-y ;max-height:500px;overflow:hidden;}
 .Box-content{display:inline-block; min-height:413px;width:350px;margin-left:35px;position:relative;}
 .Box-content .home{font-size:12px;line-height: 27px;color:#003e88;padding:35px 3px 0;}
 .Menu ul li{margin:5px 0;}
 .Menu{display:inline-block;vertical-align:top;margin-left:44px;}
 .hr{background:url('../images/img-hr.png') no-repeat ;height:1px;}
+.Box-content-center p{font-size:12px;line-height:27px;}
 
 /*contato*/
 .contact p{margin:40px 0 25px;}
@@ -42,10 +47,10 @@ body{background:#004b8d;}
 .contact ul li a{background:url('../images/ico-twitter.png') no-repeat left top;height:20px;padding:0 0 5px 20px;margin-right:20px;	}
 .contact ul .link2 a{background:url('../images/ico-youtube.png') no-repeat left top;padding-left:40px;	}
 .contact h1{margin-top: 70px;}
+.contact p{font-size:12px;line-height:inherit;}
 .Box-content h1{font-size:18px;font-family:gotham_boldregular;margin-bottom:15px;}
 .Box-content-header{background:url('../images/img-hr.png') no-repeat;height:5px;}
-.Box-content-center{color:#003e88;padding:35px 10px 0 10px;overflow:hidden}
-.Box-content-center p{font-size:12px;}
+.Box-content-center{color:#003e88;padding:35px 10px 0 10px;overflow:hidden;}
 .Box-content-center .space{line-height: 27px;}
 .Box-content-center ul li a{font-size:12px;font-family:gotham_bookregular;color:#0e4b8b;text-decoration:none;}
 .Box-content-center a{font-size:15px;font-family:gotham_bookregular;color:#0e4b8b;text-decoration:none;font-weight:bold;}
@@ -55,3 +60,23 @@ body{background:#004b8d;}
 /*comunidade*/
 
 .Comunidade p{margin-bottom:35px;}
+
+/* scroll */
+
+ 
+ #scrollbar3 .viewport { width: 330px; height: 486px; overflow: hidden; position: relative; }
+ #scrollbar3 .overview { list-style: none; position: absolute; left: 0; top: 25px; padding: 0; margin: 0; }
+ #scrollbar3 .scrollbar{ background: transparent url(../images/bg-scrollbar-track-y.png) no-repeat 0 0; position: relative; background-position: 0 0; float: right; width: 15px; }
+ #scrollbar3 .track { background: transparent url(../images/bg-scrollbar-trackend-y.png) no-repeat 0 100%; height: 100%; width:15px; position: relative;padding-top:10px; }
+ #scrollbar3 .thumb { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 62%; height: 20px; width: 25px; cursor: pointer; overflow: hidden; position: absolute; top: 0; left: -5px;margin-top:20px; }
+ #scrollbar3 .thumb .end { background: transparent url(../images/bg-scrollbar-thumb-y.png) no-repeat 50% 0; overflow: hidden; height: 5px; width: 25px; }
+ #scrollbar3 .disable { display: none; }
+ 
+ 
+ /* historia*/
+ 
+ .Box-content .historia ul li{width:156px;}
+
+ /*programa*/
+ 
+ #aba-programa .Box-content-center ul li{}
