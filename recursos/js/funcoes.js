@@ -27,6 +27,13 @@ jQuery(document).ready(function(){
 		jQuery("#aba-historia").fadeIn();
 		jQuery('#scrollbar2').tinyscrollbar();
 	});
+	jQuery("#link-filmes").click(function(){
+		jQuery("li").removeClass("ativo");
+		jQuery(this).addClass("ativo");
+		jQuery(".item").hide();
+		jQuery("#aba-filmes").fadeIn();
+		jQuery("ul.demo2").ytplaylist({addThumbs:true, autoPlay: false, holderId: 'ytvideo2'});
+	});
 	jQuery("#link-comunidades").click(function(){
 		jQuery("li").removeClass("ativo");
 		jQuery(this).addClass("ativo");
