@@ -26,7 +26,7 @@
 
 body{background:#004b8d;}
 #All{background:#004b8d url('../images/bgzao.jpg') no-repeat center top;font-family:gotham_bookregular;}
-#Content{width:991px;margin:0 auto;overflow:hidden;min-height: 725px;}
+#Content{width:825px;margin:0 auto;overflow:hidden;min-height: 725px;}
 #Footer{height:100px;background:url('../images/bg-footer.png') no-repeat center top;clear:both;overflow:hidden;position: relative;top: -71px;}
 .Box{float:right;margin-top:46px;height:560px;}
 .Boxfooter{width:991px;margin:0 auto;overflow:hidden;}
