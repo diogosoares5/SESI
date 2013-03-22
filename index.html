@@ -6,13 +6,17 @@
 <link rel="stylesheet" href="recursos/css/style.css" />
 <title>SESI Cidadania</title>
 <!-- SCRIPT ----------------------------------------- -->
-	<!--<script type="text/javascript" src="recursos/js/jquery.min.js"></script>-->
-	<script type="text/javascript" src="recursos/js/jquery.js"></script>
-	<script type="text/javascript" src="recursos/js/funcoes.js"></script>
+	<script type="text/javascript" src="recursos/js/jquery.min.js"></script>
+	<script type="text/javascript" src="recursos/js/jquery.js"></script>	
 	<script type="text/javascript" src="recursos/js/jquery.tinyscrollbar.min.js"></script>
-	<script>	$(document).ready(function(){
-	$('#scrollbar3').tinyscrollbar({ size: 480 });
-	});</script>
+	<script type="text/javascript" src="recursos/js/funcoes.js"></script>
+	<script type="text/javascript">
+		jQuery.noConflict();
+		jQuery(document).ready(function(){
+			jQuery('#scrollbar1').tinyscrollbar();	
+		});
+	</script>
+	
 </head>
 
 <body>
@@ -47,26 +51,30 @@
 								cidadania faz bem para todo o Estado do Rio. Para todo o Brasil.</p></div>
 								<div class="Box-content-footer"></div>	
 							</span>
-							<span class="item" id="aba-programa">																
-								<div class="Box-content-center">
-									<ul>
-										<li>
-											<div>
-											<h2>EDUCAÇÃO PROFISSIONAL</h2>
-											<p>Além de oferecer orientação profissional, o SENAI une a teoria da sala de aula com a prática em oficinas e laboratórios modernos, formando profissionais qualificados para o mercado de trabalho. Os cursos gratuitos são oferecidos em unidades do SENAI e também nas undiades móveis, que ficam próximas as cominidades.</p>
-											</div>
-										</li>									
-										<li>
-											<div>
-											<h2>EDUCAÇÃO BÁSICA</h2>
-											<p>Oferece gratuitamente Ensino Fundamental e Médio para jovens e adultos; pré Enem; reforço escolar; e cursos de Inglês, Espanhol, Informática, Educação Orçamentária, Atualização em Língua Portuguesa e em Matemática.</p>
-											</div>
-										</li>
-										<li></li>
-										<li></li>
-									</ul>								
+							<span class="item" id="aba-programa">
+								<div id="scrollbar1">
+									<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
+									<div class="viewport">
+										<div class="overview">
+											<ul>
+												<li>
+													<div>
+													<h2>EDUCAÇÃO PROFISSIONAL</h2>
+													<p>Além de oferecer orientação profissional, o SENAI une a teoria da sala de aula com a prática em oficinas e laboratórios modernos, formando profissionais qualificados para o mercado de trabalho. Os cursos gratuitos são oferecidos em unidades do SENAI e também nas undiades móveis, que ficam próximas as cominidades.</p>
+													</div>
+												</li>									
+												<li>
+													<div>
+													<h2>EDUCAÇÃO BÁSICA</h2>
+													<p>Oferece gratuitamente Ensino Fundamental e Médio para jovens e adultos; pré Enem; reforço escolar; e cursos de Inglês, Espanhol, Informática, Educação Orçamentária, Atualização em Língua Portuguesa e em Matemática.</p>
+													</div>
+												</li>
+												<li></li>
+												<li></li>
+											</ul>								
+										</div>
+									</div>
 								</div>
-								
 							</span>
 							<span class="item" id="aba-historia">								
 								<div class="Box-content-header"></div>
