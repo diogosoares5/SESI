@@ -25,14 +25,14 @@ jQuery(document).ready(function(){
 		jQuery(this).addClass("ativo");
 		jQuery(".item").hide();
 		jQuery("#aba-historia").fadeIn();
-		jQuery('#scrollbar2').tinyscrollbar();
+		jQuery('#scrollbar2').tinyscrollbar();		
 	});
 	jQuery("#link-filmes").click(function(){
 		jQuery("li").removeClass("ativo");
 		jQuery(this).addClass("ativo");
 		jQuery(".item").hide();
 		jQuery("#aba-filmes").fadeIn();
-		jQuery("ul.demo2").ytplaylist({addThumbs:true, autoPlay: false, holderId: 'ytvideo2'});
+		jQuery("ul.demo2").ytplaylist({addThumbs:true, autoPlay: false, holderId: 'ytvideo2'});		
 	});
 	jQuery("#link-comunidades").click(function(){
 		jQuery("li").removeClass("ativo");
@@ -45,6 +45,18 @@ jQuery(document).ready(function(){
 		jQuery(this).addClass("ativo");
 		jQuery(".item").hide();
 		jQuery("#aba-contato").fadeIn();
-	});
-		
+	});	
 });
+function lightbox(){		
+		var altura = jQuery(window).height();
+		var largura = jQuery(window).width();
+		jQuery('body').css('overflow','hidden');
+		jQuery('#mask-modal').height(altura+'px');
+		jQuery('#mask-modal').fadeIn(300);
+		jQuery('#mask-modal #fechar').click(function(){
+		jQuery('#mask-modal').fadeOut(300);
+		jQuery('body').css('overflow','scroll');
+		});
+		/*alert("teste");*/
+			
+	}
