@@ -3,13 +3,6 @@ html{
 	font-size: 100%;	
 }
 
-body{
-	font: 0.625em/1em Verdana, Geneva, Arial, Helvetica, sans-serif;
-	color: #000;
-	background: #fff;
-	/* Needed for IE 6 - could be controlled via site-specific script instead */
-	height: 100%;
-}
 
 input, select, textarea{
 	font-size: 100%;

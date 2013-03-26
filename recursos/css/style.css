@@ -3,9 +3,9 @@
 .lf{float:left;}
 
 
-body{background:#ffffff;}
+body{background:#004652 !important;}
 p{font-size:12px;line-height:25px;padding-left: 5px;font-family:museo_sans_rounded300;}
-#All{background:#fff url('../images/bgzao1.jpg') no-repeat center top;font-family:gotham_bookregular;}
+#All{background:#004652 url('../images/bgzao1.jpg') no-repeat center top;font-family:gotham_bookregular;}
 #Content{width:960px;margin:0 auto;overflow:hidden;min-height: 725px;}
 #Footer{height:115px;background:url('../images/_bg-footer.png') no-repeat center top;clear:both;overflow:hidden;position: relative;top: -56px;}
 .Box{float:right;margin-top:100px;height:560px;}
