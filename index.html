@@ -3,15 +3,26 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <link rel="stylesheet" href="recursos/css/reset.css" />
+<link rel="stylesheet" href="recursos/css/font.css" />
 <link rel="stylesheet" href="recursos/css/style.css" />
+<link rel="stylesheet" href="recursos/css/picture-slides.css" />
+<link rel="stylesheet" href="recursos/css/shadowbox.css" />
 <link rel="stylesheet" href="recursos/css/media.css" />
 <title>SESI Cidadania</title>
 <!-- SCRIPT ----------------------------------------- -->
-	<script type="text/javascript" src="recursos/js/jquery.min.js"></script>
-	<script type="text/javascript" src="recursos/js/jquery.js"></script>	
+	<script type="text/javascript" src="recursos/js/jquery.min.js"></script>		
 	<script type="text/javascript" src="recursos/js/jquery.tinyscrollbar.min.js"></script>
 	<script type="text/javascript" src="recursos/js/jquery.youtubeplaylist.js"></script>
-	<script type="text/javascript" src="recursos/js/funcoes.js"></script>	
+	<script type="text/javascript" src="recursos/js/jquery.lightbox-0.5.js"></script>	
+	<script type="text/javascript" src="recursos/js/shadowbox.js"></script>	
+	<script type="text/javascript" src="recursos/js/funcoes.js"></script>
+	<script type="text/javascript">
+	 Shadowbox.init({
+	 language: 'pt',
+	 player: ['img', 'html', 'swf'],
+	 continuous: true
+	 });
+	</script>
 		
 </head>
 
@@ -20,19 +31,27 @@
         <div id="Content">
 			<div id="mask-modal">
 				<div class="mask-content">
-					<img title="" alt="" src="img-modal.png">
+					<div class="yt_holder">
+						<div id="ytvideo2"></div>
+						<ul class="demo2">											
+							<li><a href="http://www.youtube.com/watch?v=S6LNS354KFA"></a></li>
+							<li><a href="http://www.youtube.com/watch?v=B-nio3E5G9k"></a></li>
+							<li><a href="http://www.youtube.com/watch?v=gHKUHC_EnB4"></a></li>											
+							<li><a href="http://www.youtube.com/watch?v=B-nio3E5G9k"></a></li>											
+						</ul>
+					</div>				
 					<a href="#" id="fechar"><img width="12" height="13" title="" alt="" src="recursos/images/fechar.png"></a>
 				</div>
 			</div>
         	<div class="Box">
             	<div class="Box-header"><img src="recursos/images/bg-box-content-header.png" alt=""  /></div>
                 <div class="Box-center">
-                	<div class="Menu">
+                	<div class="Menu" >
 						<ul>
                             <li id="link-home"><div class="Logo" id="link-home"><a href="#"><img src="recursos/images/logo-sesi-cidadania.png" alt=""  /></a></div></li>                        
                             <li id="link-programa"><a href="#"><img src="recursos/images/img-button1.png" alt=""  /></a></li>
                             <li id="link-historia"><a href="#"><img src="recursos/images/img-button2.png" alt=""  /></a></li>
-                            <li id="link-filmes"><a href="#"><img src="recursos/images/img-button3.png" alt=""  /></a></li>
+                            <li><a href="http://www.youtube.com/v/S6LNS354KFA" rel="shadowbox[vocation];width=600;height=450"><img src="recursos/images/img-button3.png" alt=""  /></a><a href="http://www.youtube.com/v/B-nio3E5G9k" rel="shadowbox[vocation];width=600;height=450"></a></li>
                             <li id="link-comunidades"><a href="#"><img src="recursos/images/img-button4.png" alt=""  /></a></li>
                             <li id="link-contato"><a href="#"><img src="recursos/images/img-button5.png" alt=""  /></a></li>
                         </ul>
@@ -40,17 +59,7 @@
                     <div class="Box-content">							
 							<span class="item" id="aba-home">								
 								<div class="Box-content-header"></div>
-								<div class="Box-content-center"><p>O Rio de Janeiro está se transformando e, com o<br />
-								apoio do Sistema FIRJAN, esta transformação está<br />
-								chegando a diversas comunidades. Tudo isso graças<br />
-								ao programa SESI Cidadania, que foi criado em 2010,
-								está presente em todas as comunidades e já realizou
-								mais de 400 mil atendimentos. Vidas que tomaram<br />
-								um novo rumo, um novo sentido, que voltaram a<br />
-								sorrir. Com educação, esporte, lazer e cultura, o SESI
-								Cidadania não resgata só as comunidades, mas o
-								orgulho de todo mundo que vive nelas. E toda essa
-								cidadania faz bem para todo o Estado do Rio. Para todo o Brasil.</p></div>
+								<div class="Box-content-center"><p>O Rio de Janeiro está se transformando, e, com o apoio do Sistema FIRJAN – por meio do SESI Cidadania –, essa transformação está chegando a diversas comunidades. O programa, criado em agosto de 2010, está presente em todas as comunidades pacificadas e já realizou mais de 400 mil atendimentos. Vidas que tomaram um novo rumo, um novo sentido, que voltaram a sorrir. Com educação, esporte, lazer e cultura, o SESI Cidadania não resgata só as comunidades, mas o orgulho de todo mundo que vive nelas. E toda essa cidadania faz bem para todo o estado do Rio. Para todo o Brasil.</p></div>
 								<div class="Box-content-footer"></div>	
 							</span>
 							<span class="item" id="aba-programa">
@@ -62,28 +71,49 @@
 												<li>
 													<div>
 													<h2>EDUCAÇÃO PROFISSIONAL</h2>
-													<p>Além de oferecer orientação profissional, o SENAI une a teoria da sala de aula com a prática em oficinas e laboratórios modernos, formando profissionais qualificados para o mercado de trabalho. Os cursos gratuitos são oferecidos em unidades do SENAI e também nas undiades móveis, que ficam próximas as cominidades.</p>
+													<p>Além de oferecer orientação profissional, o SENAI une a teoria da sala de aula com a prática em oficinas e laboratórios modernos, formando profissionais qualificados para o mercado de trabalho. Os cursos gratuitos são oferecidos em unidades do SENAI e também nas unidades móveis, que ficam próximas às comunidades. Hoje são mais de 5 mil matrículas nos cursos do SENAI.</p>
 													</div>
 												</li>
 												<div class="Box-content-header"></div>												
 												<li>
 													<div>
 													<h2>EDUCAÇÃO BÁSICA</h2>
-													<p>Oferece gratuitamente Ensino Fundamental e Médio para jovens e adultos; pré Enem; reforço escolar; e cursos de Inglês, Espanhol, Informática, Educação Orçamentária, Atualização em Língua Portuguesa e em Matemática.</p>
+													<p>Oferece gratuitamente Ensino Fundamental e Médio para jovens e adultos; pré-Enem; reforço escolar; e cursos de Inglês, Espanhol, Informática, Educação Orçamentária, Atualização em Língua Portuguesa e em Matemática. Hoje são cerca de 10 mil matrículas nos cursos do SESI.</p>
 													</div>
 												</li>
 												<div class="Box-content-header"></div>
 												<li>
 													<div>
-													<h2>EDUCAÇÃO BÁSICA</h2>
-													<p>Oferece gratuitamente Ensino Fundamental e Médio para jovens e adultos; pré Enem; reforço escolar; e cursos de Inglês, Espanhol, Informática, Educação Orçamentária, Atualização em Língua Portuguesa e em Matemática.</p>
+													<h2>ATLETA DO FUTURO</h2>
+													<p>Promove atividades esportivas para crianças e adolescentes. Seu objetivo, além de proporcionar lazer e ensinar valores por meio do esporte, é incentivar a formação de futuros atletas, a especialização em idade adequada e o exercício da cidadania. Hoje são mais de 4 mil futuros atletas das comunidades.</p>
 													</div>
 												</li>
 												<div class="Box-content-header"></div>
 												<li>
 													<div>
-													<h2>EDUCAÇÃO BÁSICA</h2>
-													<p>Oferece gratuitamente Ensino Fundamental e Médio para jovens e adultos; pré Enem; reforço escolar; e cursos de Inglês, Espanhol, Informática, Educação Orçamentária, Atualização em Língua Portuguesa e em Matemática.</p>
+													<h2>INDÚSTRIA DO CONHECIMENTO</h2>
+													<p>É um espaço multimeio, de uso gratuito para a comunidade, com biblioteca, jornais, revistas, DVDs, vídeos, acesso à internet, além de oficinas, palestras e atrações culturais. Hoje já são 11 bibliotecas espalhadas nas comunidades e outras serão entregues ao longo deste ano.</p>
+													</div>
+												</li>
+												<div class="Box-content-header"></div>
+												<li>
+													<div>
+													<h2>PROGRAMA SESI TERCEIRA IDADE</h2>
+													<p>Programa multidisciplinar voltado para as pessoas com mais de cinquenta anos de idade. Suas atividades, todas gratuitas, têm como objetivo promover o bem-estar da terceira idade incentivando um estilo de vida ativo e saudável. Hoje são mais de mil alunos da terceira idade.</p>
+													</div>
+												</li>
+												<div class="Box-content-header"></div>
+												<li>
+													<div>
+													<h2>CULTURA</h2>
+													<p>Entre as atividades promovidas pelo SESI nas comunidades pacificadas estão oficina de grafite, fotografia, percussão, hip hop, teatro para crianças, jovens e terceira idade, caravanas culturais e programação cultural. Tudo isso de forma gratuita. Hoje são mais de 30 mil atendimentos em atividades culturais do SESI.</p>
+													</div>
+												</li>
+												<div class="Box-content-header"></div>
+												<li>
+													<div>
+													<h2>COZINHA BRASIL</h2>
+													<p>Seu objetivo é melhorar os hábitos alimentares de milhares de brasileiros, elevando o nível de saúde e a qualidade de vida. As aulas ensinam a aproveitar alimentos integralmente e a utilizá-los de forma saudável. Hoje já são mais de 15 mil atendimentos no Cozinha Brasil.</p>
 													</div>
 												</li>
 												<div class="Box-content-header"></div>
@@ -96,48 +126,27 @@
 								<div id="scrollbar2">
 									<div class="scrollbar"><div class="track"><div class="thumb"><div class="end"></div></div></div></div>
 									<div class="viewport">
-										<div class="overview historia">
+										<div class="overview historia" id="gallery">
 											<ul>
-												<li class="lf" onClick="lightbox();" ><a href="#"><img src="recursos/images/img1.jpg" alt=""  /></a></li>
-												<li class="rt"><a href="#"><img src="recursos/images/img2.jpg" alt=""  /></a></li>
-												<li class="lf"><a href="#"><img src="recursos/images/img3.jpg" alt=""  /></a></li>
-												<li class="rt"><a href="#"><img src="recursos/images/img4.jpg" alt=""  /></a></li>
-												<li class="lf"><a href="#"><img src="recursos/images/img5.jpg" alt=""  /></a></li>
-												<li class="rt"><a href="#"><img src="recursos/images/img6.jpg" alt=""  /></a></li>
-												<li class="lf"><a href="#"><img src="recursos/images/img7.jpg" alt=""  /></a></li>
-												<li class="rt"><a href="#"><img src="recursos/images/img8.jpg" alt=""  /></a></li>
+												<li class="lf"><a class="image1" href="recursos/images/photo/DetalheHistorias_Andressa.png"></a></li>
+												<li class="rt"><a class="image2" href="recursos/images/photo/DetalheHistorias_Antonieta.png"></a></li>
+												<li class="lf"><a class="image3" href="recursos/images/photo/DetalheHistorias_Camila.png"></a></li>
+												<li class="rt"><a class="image4" href="recursos/images/photo/DetalheHistorias_Claudio.png"></a></li>
+												<li class="lf"><a class="image5" href="recursos/images/photo/DetalheHistorias_Edilma.png"></a></li>
+												<li class="rt"><a class="image6" href="recursos/images/photo/DetalheHistorias_Flavio.png"></a></li>
+												<li class="lf"><a class="image7" href="recursos/images/photo/DetalheHistorias_Giovane.png"></a></li>
+												<li class="rt"><a class="image8" href="recursos/images/photo/DetalheHistorias_Lenira.png"></a></li>
+												<li class="lf"><a class="image9" href="recursos/images/photo/DetalheHistorias_Midian.png"></a></li>
+												<li class="rt"><a class="image10" href="recursos/images/photo/DetalheHistorias_Neuza.png"></a></li>
 											</ul>								
 										</div>
-									</div>
+									</div>									
 								</div>
-							</span>
-							<span class="item" id="aba-filmes">						
-								<div class="Box-content-center ">
-									<div class="yt_holder">
-										<div id="ytvideo2"></div>
-										<ul class="demo2">											
-											<li><a href="http://www.youtube.com/watch?v=S6LNS354KFA"></a></li>
-											<li><a href="http://www.youtube.com/watch?v=B-nio3E5G9k"></a></li>
-											<li><a href="http://www.youtube.com/watch?v=gHKUHC_EnB4"></a></li>											
-											<li><a href="http://www.youtube.com/watch?v=B-nio3E5G9k"></a></li>											
-										</ul>
-									</div>
-								</div>								
-							</span>
+							</span>							
 							<span class="item" id="aba-comunidades">						
 								<div class="Box-content-center Comunidade">
 									<h1>Comunidades Pacificadas  atendidas pelo sesi cidadania:</h1>
-									<p>Adeus/Baiana • Alemão • Andaraí • Borel • Cantagalo/<br />
-									Pavão-Pavãozinho • Chapéu Mangueira/Babilônia<br />
-									• Chatuba • Cidade de Deus • Coroa/Fallet/Fogueteiro<br />
-									• Fazendinha • Fé/Sereno • Formiga • Jacarezinho<br />
-									• Jardim Batan • Ladeira dos Tabajaras/ Cabritos<br/>
-									• Macacos • Mangueira • Manguinhos • Morro Azul<br />
-									atendida pelo 2º Batalhão da PM • Nova Brasília<br />
-									• Parque Proletário • Prazeres/Escondidinho •<br />
-									Providência • Rocinha • Salgueiro • Santa Marta •<br />
-									São Carlos/Mineira/Zinco/Querosene<br /> • São João/Matriz/
-									Quieto • Turano • Vidigal/Chácara do Céu • Vila Cruzeiro. </p>							
+									<p>Adeus/Baiana • Alemão • Andaraí • Borel • Cantagalo/Pavão-Pavãozinho • Chapéu Mangueira/Babilônia • Chatuba • Cidade de Deus • Coroa/Fallet/Fogueteiro • Fazendinha • Fé/Sereno • Formiga • Jacarezinho • Jardim Batan • Ladeira dos Tabajaras/ Cabritos • Macacos • Mangueira • Manguinhos • Nova Brasília • Parque Proletário • Prazeres/Escondidinho • Providência • Rocinha • Salgueiro • Santa Marta • São Carlos/Mineira/Zinco/Querosene • São João/Matriz/Quieto • Turano • Vidigal/Chácara do Céu • Vila Cruzeiro • Morro Azul atendida pelo 2º Batalhão da PM. </p>							
 								</div>
 								<div class="Box-content-footer"></div>
 							</span>

@@ -25,7 +25,8 @@ jQuery(document).ready(function(){
 		jQuery(this).addClass("ativo");
 		jQuery(".item").hide();
 		jQuery("#aba-historia").fadeIn();
-		jQuery('#scrollbar2').tinyscrollbar();		
+		jQuery('#scrollbar2').tinyscrollbar();
+		jQuery('#gallery a').lightBox();
 	});
 	jQuery("#link-filmes").click(function(){
 		jQuery("li").removeClass("ativo");
@@ -47,6 +48,7 @@ jQuery(document).ready(function(){
 		jQuery("#aba-contato").fadeIn();
 	});	
 });
+
 function lightbox(){		
 		var altura = jQuery(window).height();
 		var largura = jQuery(window).width();
@@ -56,6 +58,7 @@ function lightbox(){
 		jQuery('#mask-modal #fechar').click(function(){
 		jQuery('#mask-modal').fadeOut(300);
 		jQuery('body').css('overflow','scroll');
+		
 		});
 		/*alert("teste");*/
 			

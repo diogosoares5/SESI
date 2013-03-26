@@ -1,30 +1,10 @@
-@font-face {
-    font-family: 'gotham_bookregular';
-    src: url('font/gotham-book_0-webfont.eot');
-    src: url('font/gotham-book_0-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/gotham-book_0-webfont.woff') format('woff'),
-         url('font/gotham-book_0-webfont.ttf') format('truetype'),
-         url('font/gotham-book_0-webfont.svg#gotham_bookregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'gotham_boldregular';
-    src: url('font/gotham-bold-webfont.eot');
-    src: url('font/gotham-bold-webfont.eot?#iefix') format('embedded-opentype'),
-         url('font/gotham-bold-webfont.woff') format('woff'),
-         url('font/gotham-bold-webfont.ttf') format('truetype'),
-         url('font/gotham-bold-webfont.svg#gotham_boldregular') format('svg');
-    font-weight: normal;
-    font-style: normal;
-
-}
 /*classe genericas*/
 .rt{float:right;}
 .lf{float:left;}
 
 
-body{background:#fff;}
+body{background:#ffffff;}
+p{font-size:12px;line-height:25px;padding-left: 5px;font-family:museo_sans_rounded300;}
 #All{background:#fff url('../images/bgzao1.jpg') no-repeat center top;font-family:gotham_bookregular;}
 #Content{width:960px;margin:0 auto;overflow:hidden;min-height: 725px;}
 #Footer{height:115px;background:url('../images/_bg-footer.png') no-repeat center top;clear:both;overflow:hidden;position: relative;top: -56px;}
@@ -37,7 +17,7 @@ body{background:#fff;}
 .Menu ul li{margin:8px 0;}
 .Menu{display:inline-block;vertical-align:top;margin-left:44px;}
 .hr{background:url('../images/img-hr.png') no-repeat ;height:1px;}
-.Box-content-center p{font-size:12px;line-height:25px;padding-left: 5px;}
+
 
 /*contato*/
 .contact p{margin:40px 0 25px;}
@@ -90,20 +70,43 @@ body{background:#fff;}
  
  /* historia*/
  
- .Box-content .historia ul li{width:156px;}
+ .Box-content .historia ul li{width:156px;margin-bottom: 10px;}
 
  /*programa*/
  
  #aba-programa .Box-content-center ul li{}
+ #aba-programa h2{font-size:17px;font-family:museo_sans900;}
  #aba-programa .Box-content-header{margin:23px 0;}
+ #gallery ul li a{display: block;height: 157px;width: 156px;}
+ #gallery ul li .image1{background:url(../images/photohistoria/andressa.jpg) no-repeat;}
+ #gallery ul li .image1:hover{background:url(../images/photohistoria/andressa.jpg) no-repeat 0 -157px;}
+ #gallery ul li .image2{background:url(../images/photohistoria/antonieta.jpg) no-repeat;}
+ #gallery ul li .image2:hover{background:url(../images/photohistoria/antonieta.jpg) no-repeat 0 -157px;}
+ #gallery ul li .image3{background:url(../images/photohistoria/camila.jpg) no-repeat;}
+ #gallery ul li .image3:hover{background:url(../images/photohistoria/camila.jpg) no-repeat 0 -157px;}
+ #gallery ul li .image4{background:url(../images/photohistoria/claudio.jpg) no-repeat;}
+ #gallery ul li .image4:hover{background:url(../images/photohistoria/claudio.jpg) no-repeat 0 -157px;}
+ #gallery ul li .image5{background:url(../images/photohistoria/edilma.jpg) no-repeat;}
+ #gallery ul li .image5:hover{background:url(../images/photohistoria/edilma.jpg) no-repeat 0 -157px;}
+ #gallery ul li .image6{background:url(../images/photohistoria/flavio.jpg) no-repeat;}
+ #gallery ul li .image6:hover{background:url(../images/photohistoria/flavio.jpg) no-repeat 0 -157px;}
+ #gallery ul li .image7{background:url(../images/photohistoria/giovane.jpg) no-repeat;}
+ #gallery ul li .image7:hover{background:url(../images/photohistoria/giovane.jpg) no-repeat 0 -157px;}
+ #gallery ul li .image8{background:url(../images/photohistoria/lenira.jpg) no-repeat;}
+ #gallery ul li .image8:hover{background:url(../images/photohistoria/lenira.jpg) no-repeat 0 -157px;}
+ #gallery ul li .image9{background:url(../images/photohistoria/midian.jpg) no-repeat;}
+ #gallery ul li .image9:hover{background:url(../images/photohistoria/midian.jpg) no-repeat 0 -157px;}
+ #gallery ul li .image10{background:url(../images/photohistoria/neuza.jpg) no-repeat;}
+ #gallery ul li .image10:hover{background:url(../images/photohistoria/neuza.jpg) no-repeat 0 -157px;}
  
  /*filmes*/
  
  #aba-filmes .Box-content-center {margin-top:100px;}
- #aba-filmes ul li {width: 120px;display: inline-block;margin-bottom: 15px;margin: 0 2px;margin-top: 15px;text-align: left;vertical-align: top;width: auto;}
+ .demo2 ul li {width: 120px;display: inline-block;margin-bottom: 15px;margin: 0 2px;margin-top: 15px;text-align: left;vertical-align: top;width: auto;}
  #ytvideo,#ytvideo2 {margin-right:10px;width:325px;height: 200px;overflow:hidden;background: #999;text-align: center;}
- #aba-filmes ul li img {width: 72px;margin-right: 0;border: 1px solid #999;}
- #aba-filmes iframe {width:325px;height: 200px;}
+ .demo2 ul li img {width: 72px;margin-right: 0;border: 1px solid #999;}
+ #ytvideo2 iframe {width:325px;height: 200px;}
+ .demo2 .yt-vid{position:none}
  
  /*light box*/
  
@@ -114,3 +117,24 @@ html,body{width:100%;height:100%;}
 #mask-modal  p{margin:15px 50px 15px 15px;}
 .mask-content {width:760px;height:446px;position:absolute;left:50%;margin-left:-380px;top:50%;margin-top:-223px;background:#ffffff;}
 .mask-content a {position:absolute;top:0;right:0;} 
+
+/*lightbox historia*/
+#jquery-overlay {position: absolute;top: 0;left: 0;z-index: 90;width: 100%;height: 500px;}
+#jquery-lightbox {position: absolute;top: 0;left: 0;width: 100%;	z-index: 100;text-align: center;line-height: 0;}
+#jquery-lightbox a img {border: none;display: none;}
+#lightbox-container-image-box {position: relative;background-color: #fff;width: 250px;height: 250px;margin: 0 auto;}
+#lightbox-container-image-box{height:616px !important;width:600px !important;}
+#lightbox-container-image {padding: 0;}
+#lightbox-loading {position: absolute;top: 40%;left: 0%;height: 25%;width: 100%;text-align: center;line-height: 0;}
+#lightbox-nav {position: absolute;top: 0;left: 0;height: 100%;width: 100%;z-index: 10;}
+#lightbox-container-image-box > #lightbox-nav { left: 0; }
+#lightbox-nav a { outline: none;}
+#lightbox-nav-btnPrev, #lightbox-nav-btnNext {width: 49%;height: 100%;zoom: 1;display: block;}
+#lightbox-nav-btnPrev {left: 0;float: left;}
+#lightbox-nav-btnNext {right: 0;float: right;}
+#lightbox-container-image-data-box {font: 10px Verdana, Helvetica, sans-serif;background-color: #fff;margin: 0 auto;line-height: 1.4em;overflow: auto;width: 10px !important;padding: 0 10px 0;}
+#lightbox-container-image-data {padding: 0 10px;color: #666;}
+#lightbox-container-image-data #lightbox-image-details {width: 70%;float: left;text-align: left;display:none;}	
+#lightbox-image-details-caption {font-weight: bold;}
+#lightbox-image-details-currentNumber {display: block;clear: left;padding-bottom: 1.0em;}
+#lightbox-secNav-btnClose {background: url('../images/close.png') no-repeat;float: right;padding:23px 0 30px;position: absolute;right: 142px;top: -55px;width: 66px;}
