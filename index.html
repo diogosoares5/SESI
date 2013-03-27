@@ -13,7 +13,8 @@
 	<script type="text/javascript" src="recursos/js/jquery.min.js"></script>		
 	<script type="text/javascript" src="recursos/js/jquery.tinyscrollbar.min.js"></script>
 	<script type="text/javascript" src="recursos/js/jquery.youtubeplaylist.js"></script>
-	<script type="text/javascript" src="recursos/js/jquery.lightbox-0.5.js"></script>	
+	<script type="text/javascript" src="recursos/js/jquery.lightbox-0.5.min.js"></script>	
+	<script type="text/javascript" src="recursos/js/jquery.colorbox-min.js"></script>	
 	<script type="text/javascript" src="recursos/js/shadowbox.js"></script>	
 	<script type="text/javascript" src="recursos/js/funcoes.js"></script>
 	<script type="text/javascript">
@@ -29,7 +30,7 @@
 <body>
     <div id="All">
         <div id="Content">
-			<div id="mask-modal">
+			<!--<div id="mask-modal">
 				<div class="mask-content">
 					<div class="yt_holder">
 						<div id="ytvideo2"></div>
@@ -42,7 +43,7 @@
 					</div>				
 					<a href="#" id="fechar"><img width="12" height="13" title="" alt="" src="recursos/images/fechar.png"></a>
 				</div>
-			</div>
+			</div>-->
         	<div class="Box">
             	<div class="Box-header"><img src="recursos/images/bg-box-content-header.png" alt=""  /></div>
                 <div class="Box-center">
@@ -51,7 +52,7 @@
                             <li id="link-home"><div class="Logo" id="link-home"><a href="#"><img src="recursos/images/logo-sesi-cidadania.png" alt=""  /></a></div></li>                        
                             <li id="link-programa"><a href="#"><img src="recursos/images/img-button1.png" alt=""  /></a></li>
                             <li id="link-historia"><a href="#"><img src="recursos/images/img-button2.png" alt=""  /></a></li>
-                            <li><a href="http://www.youtube.com/v/S6LNS354KFA" rel="shadowbox[vocation];width=600;height=450"><img src="recursos/images/img-button3.png" alt=""  /></a><a href="http://www.youtube.com/v/B-nio3E5G9k" rel="shadowbox[vocation];width=600;height=450"></a></li>
+                            <li id="link-filmes"><a href="#" ><img src="recursos/images/img-button3.png" alt=""  /></a></li>
                             <li id="link-comunidades"><a href="#"><img src="recursos/images/img-button4.png" alt=""  /></a></li>
                             <li id="link-contato"><a href="#"><img src="recursos/images/img-button5.png" alt=""  /></a></li>
                         </ul>
@@ -142,21 +143,33 @@
 										</div>
 									</div>									
 								</div>
-							</span>							
+							</span>
+							<span class="item" id="aba-filmes">						
+								<div class="Box-content-center ">
+								<div class="yt_holder">
+									<div id="ytvideo2"><a class="youtube" href="http://www.youtube.com/embed/TS8wTXq5XcY?rel=0&wmode=transparent"><img src="recursos/images/imgyt_1.jpg" /></a></div>
+									<ul class="demo2">											
+										<li><a ytUrl="http://www.youtube.com/embed/TS8wTXq5XcY?rel=0&wmode=transparent" imgUrl="recursos/images/imgyt_1.jpg" class="chamaimagem"><img src="recursos/images/imgyt1.jpg" /></a></li>
+										<li><a ytUrl="http://www.youtube.com/embed/gHKUHC_EnB4?rel=0&wmode=transparent" imgUrl="recursos/images/imgyt_2.jpg" class="chamaimagem"><img src="recursos/images/imgyt2.jpg" /></a></li>
+										<li><a ytUrl="http://www.youtube.com/embed/S6LNS354KFA?rel=0&wmode=transparent" imgUrl="recursos/images/imgyt_3.jpg" class="chamaimagem"><img src="recursos/images/imgyt3.jpg" /></a></li>																					
+									</ul>
+								</div>											
+								</div>								
+							</span>
 							<span class="item" id="aba-comunidades">						
 								<div class="Box-content-center Comunidade">
 									<h1>Comunidades Pacificadas  atendidas pelo sesi cidadania:</h1>
-									<p>Adeus/Baiana • Alemão • Andaraí • Borel • Cantagalo/Pavão-Pavãozinho • Chapéu Mangueira/Babilônia • Chatuba • Cidade de Deus • Coroa/Fallet/Fogueteiro • Fazendinha • Fé/Sereno • Formiga • Jacarezinho • Jardim Batan • Ladeira dos Tabajaras/ Cabritos • Macacos • Mangueira • Manguinhos • Nova Brasília • Parque Proletário • Prazeres/Escondidinho • Providência • Rocinha • Salgueiro • Santa Marta • São Carlos/Mineira/Zinco/Querosene • São João/Matriz/Quieto • Turano • Vidigal/Chácara do Céu • Vila Cruzeiro • Morro Azul atendida pelo 2º Batalhão da PM. </p>							
+									<p>ADEUS / BAIANA • ALEMÃO • ANDARAÍ • BOREL • CANTAGALO / PAVÃO-PAVÃOZINHO • CHAPÉU MANGUEIRA / BABILÔNIA • CHATUBA • CIDADE DE DEUS • COROA / FALLET / FOGUETEIRO • FAZENDINHA • FÉ / SERENO • FORMIGA • JACAREZINHO • JARDIM BATAN • LADEIRA DOS TABAJARAS / CABRITOS • MACACOS • MANGUEIRA • MANGUINHOS • NOVA BRASÍLIA • PARQUE PROLETÁRIO • PRAZERES / ESCONDIDINHO • PROVIDÊNCIA • ROCINHA • SALGUEIRO • SANTA MARTA • SÃO CARLOS / MINEIRA / ZINCO / QUEROSENE • SÃO JOÃO / MATRIZ / QUIETO • TURANO • VIDIGAL / CHÁCARA DO CÉU • VILA CRUZEIRO • MORRO AZUL ATENDIDA PELO 2º BATALHÃO DA PM.</p>							
 								</div>
 								<div class="Box-content-footer"></div>
 							</span>
 							<span class="item" id="aba-contato">
 								<div class="Box-content-center contact">									
-									<p>Para saber mais sobre o SESI Cidadania envie um e-mail para: <a class="mail" href="mailto:comunicacao@firjan.org.br">comunicacao@firjan.org.br</a> ou acompanhe as novidades através do:</p>
+									<p>Para saber mais sobre o SESI Cidadania envie um e-mail para: <a class="mail" href="mailto:comunicacao@firjan.org.br">comunicacao@firjan.org.br</a> ou acompanhe as novidades através das nossas redes sociais:</p>
 									<ul>
 										<li><a target="_blank" href="https://twitter.com/@sistemafirjan"> @sistemafirjan</a></li>
 										<li class="link2"><a target="_blank" href="https://www.youtube.com/sistemafirjan"> /sistemafirjan</a></li>
-										<li class="link3"><a target="_blank" href="http://www.firjan.org.br">firjan.org.br</a></li>
+										<!--<li class="link3"><a target="_blank" href="http://www.firjan.org.br">firjan.org.br</a></li>-->
 									</ul>									
 								</div>
 								<div class="Box-content-footer"></div>
@@ -165,10 +178,10 @@
                 </div>
                 <div class="Box-footer"><img src="recursos/images/bg-box-content-footer.png" alt=""  /></div>
             </div>
-        </div>
-        <div id="Footer">
+        </div>        
+    </div>
+	<div id="Footer">
         	<div class="Boxfooter"><img src="recursos/images/img-firjan.png" alt=""  /></div>
         </div>
-    </div>
 </body>
 </html>

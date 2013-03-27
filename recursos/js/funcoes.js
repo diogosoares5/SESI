@@ -33,7 +33,19 @@ jQuery(document).ready(function(){
 		jQuery(this).addClass("ativo");
 		jQuery(".item").hide();
 		jQuery("#aba-filmes").fadeIn();
-		jQuery("ul.demo2").ytplaylist({addThumbs:true, autoPlay: false, holderId: 'ytvideo2'});		
+		jQuery("ul.demo2").ytplaylist({addThumbs:true, autoPlay: false, holderId: 'ytvideo2'});	
+	
+	});
+	jQuery(".chamaimagem").click(function(){
+		jQuery('#ytvideo2').html('');
+		var valor = jQuery(this).attr('imgUrl');
+		var url = jQuery(this).attr('ytUrl');		
+		jQuery('#ytvideo2').append('<a class="youtube" href="'+url+'"><img src="'+valor+'" /></a>');
+	});
+	jQuery(".youtube").live("click",
+	function(){
+	jQuery.colorbox({href:jQuery(this).attr('href'), iframe:true, innerWidth:600, innerHeight:450,close: ""});
+	return false;
 	});
 	jQuery("#link-comunidades").click(function(){
 		jQuery("li").removeClass("ativo");

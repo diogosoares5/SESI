@@ -19,7 +19,7 @@
 #sb-info-inner{font-size:12px;}
 #sb-nav{float:right;height:65px;padding:2px 0;width:709px;}
 #sb-nav a{display:block;float:right;height:60px;width:60px;margin-left:3px;cursor:pointer;background-repeat:no-repeat;}
-#sb-nav-close{background-image:url(../images/close.png);position: absolute;right: -125px;top: -95px;}
+#sb-nav-close{background-image:url(../images/close.png);position: absolute;right: -125px;top: -60px;}
 #sb-nav-next{background-image:url(../images/lightbox-blank-right.png);right: -80px;position: absolute;top:190px;}
 #sb-nav-previous{background-image:url(../images/lightbox-blank-left.png);left: -80px;position: absolute;top:190px;}
 #sb-nav-play{background-image:url(play.png);}
